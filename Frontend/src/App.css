@@ -1,0 +1,136 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: #000000;
+  position: relative;
+}
+
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #0c0c0c;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(219, 219, 255);
+  color: #000000;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+}
+
+
+main .right {
+  background-color: #181825;
+  color: #cdd6f4;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow: auto;
+  border: 1px solid #313244;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Markdown styling inside AI Results panel */
+main .right h1,
+main .right h2,
+main .right h3,
+main .right h4 {
+  color: #89b4fa;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+main .right h1 { font-size: 1.6rem; border-bottom: 1px solid #313244; padding-bottom: 0.3rem; }
+main .right h2 { font-size: 1.35rem; }
+main .right h3 { font-size: 1.15rem; color: #a6e3a1; }
+
+main .right p {
+  margin-bottom: 1rem;
+  color: #cdd6f4;
+}
+
+main .right strong,
+main .right b {
+  color: #f9e2af;
+}
+
+main .right ul,
+main .right ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main .right li {
+  margin-bottom: 0.4rem;
+  color: #bac2de;
+}
+
+main .right code:not(pre code) {
+  background-color: #313244;
+  color: #f38ba8;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+}
+
+main .right pre {
+  background-color: #11111b;
+  border: 1px solid #45475a;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+main .right pre code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  background-color: transparent;
+}
+
+main .right blockquote {
+  border-left: 4px solid #cba6f7;
+  background-color: #1e1e2e;
+  padding: 0.6rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 6px 6px 0;
+  color: #a6adc8;
+}
